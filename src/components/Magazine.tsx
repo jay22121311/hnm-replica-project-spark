@@ -21,7 +21,7 @@ const Magazine = () => {
   return (
     <section className="py-12 md:py-16">
       <div className="container px-4 mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">H&M Magazine</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Digrwear Magazine</h2>
         
         <div className="grid md:grid-cols-2 gap-6">
           {magazineItems.map((item) => (

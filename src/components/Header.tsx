@@ -30,20 +30,20 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-1 md:flex-initial text-center md:text-left">
             <a href="/" className="text-2xl font-bold tracking-widest">
-              H&amp;M
+              DIGRWEAR
             </a>
           </div>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex flex-1 justify-center space-x-8">
-            <a href="#" className="font-medium hover:text-hmred">Ladies</a>
-            <a href="#" className="font-medium hover:text-hmred">Men</a>
-            <a href="#" className="font-medium hover:text-hmred">Divided</a>
-            <a href="#" className="font-medium hover:text-hmred">Baby</a>
-            <a href="#" className="font-medium hover:text-hmred">Kids</a>
-            <a href="#" className="font-medium hover:text-hmred">H&M HOME</a>
-            <a href="#" className="font-medium hover:text-hmred">Sport</a>
-            <a href="#" className="font-medium hover:text-hmred">Sustainability</a>
+            <a href="#" className="font-medium hover:text-primary">Ladies</a>
+            <a href="#" className="font-medium hover:text-primary">Men</a>
+            <a href="#" className="font-medium hover:text-primary">Divided</a>
+            <a href="#" className="font-medium hover:text-primary">Baby</a>
+            <a href="#" className="font-medium hover:text-primary">Kids</a>
+            <a href="#" className="font-medium hover:text-primary">Home</a>
+            <a href="#" className="font-medium hover:text-primary">Sport</a>
+            <a href="#" className="font-medium hover:text-primary">Sustainability</a>
           </nav>
 
           {/* Header Icons */}
@@ -59,7 +59,7 @@ const Header = () => {
             </Button>
             <Button variant="ghost" size="icon">
               <ShoppingBag size={20} />
-              <span className="absolute -top-1 -right-1 bg-hmred text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+              <span className="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
                 0
               </span>
             </Button>
@@ -72,7 +72,7 @@ const Header = () => {
             <input 
               type="text" 
               placeholder="Search products" 
-              className="w-full py-2 pl-10 pr-4 bg-hmgray border-none rounded-none focus:outline-none focus:ring-0"
+              className="w-full py-2 pl-10 pr-4 bg-secondary border-none rounded-none focus:outline-none focus:ring-0"
             />
             <Search className="absolute left-3 top-2.5 text-gray-500" size={18} />
           </div>
@@ -95,7 +95,7 @@ const Header = () => {
             <input 
               type="text" 
               placeholder="Search products" 
-              className="w-full py-3 pl-10 pr-4 bg-hmgray border-none rounded-none"
+              className="w-full py-3 pl-10 pr-4 bg-secondary border-none rounded-none"
             />
             <Search className="absolute left-9 top-24 text-gray-500" size={18} />
           </div>
@@ -106,7 +106,7 @@ const Header = () => {
             <a href="#" className="text-xl font-medium">Divided</a>
             <a href="#" className="text-xl font-medium">Baby</a>
             <a href="#" className="text-xl font-medium">Kids</a>
-            <a href="#" className="text-xl font-medium">H&M HOME</a>
+            <a href="#" className="text-xl font-medium">Home</a>
             <a href="#" className="text-xl font-medium">Sport</a>
             <a href="#" className="text-xl font-medium">Sustainability</a>
           </nav>

@@ -39,8 +39,6 @@ export default {
 				'popover-foreground': 'hsl(var(--popover-foreground))',
 				card: 'hsl(var(--card))',
 				'card-foreground': 'hsl(var(--card-foreground))',
-				hmred: '#e50010',
-				hmgray: '#f4f4f4',
 				hmdark: '#222222',
 			},
 			borderRadius: {

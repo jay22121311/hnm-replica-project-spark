@@ -32,7 +32,7 @@ const Footer = () => {
               <li><a href="#" className="hover:underline">Women</a></li>
               <li><a href="#" className="hover:underline">Men</a></li>
               <li><a href="#" className="hover:underline">Kids</a></li>
-              <li><a href="#" className="hover:underline">H&M HOME</a></li>
+              <li><a href="#" className="hover:underline">Home</a></li>
               <li><a href="#" className="hover:underline">Sport</a></li>
             </ul>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">CORPORATE INFO</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:underline">About H&M</a></li>
+              <li><a href="#" className="hover:underline">About Digrwear</a></li>
               <li><a href="#" className="hover:underline">Careers</a></li>
               <li><a href="#" className="hover:underline">Sustainability</a></li>
               <li><a href="#" className="hover:underline">Press</a></li>
@@ -62,16 +62,16 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">CONNECT WITH US</h4>
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="hover:text-hmred">
+              <a href="#" className="hover:text-primary">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="hover:text-hmred">
+              <a href="#" className="hover:text-primary">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="hover:text-hmred">
+              <a href="#" className="hover:text-primary">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="hover:text-hmred">
+              <a href="#" className="hover:text-primary">
                 <Youtube size={20} />
               </a>
             </div>
@@ -80,9 +80,9 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="text-center text-xs text-gray-500 pt-6 border-t">
-          <p>The content of this site is copyright-protected and is the property of H&M Hennes & Mauritz.</p>
-          <p className="mt-2">H&M's business concept is to offer fashion and quality at the best price in a sustainable way.</p>
-          <p className="mt-2">© H&M 2023. All rights reserved.</p>
+          <p>The content of this site is copyright-protected and is the property of Digrwear Inc.</p>
+          <p className="mt-2">Digrwear's business concept is to offer fashion and quality at the best price in a sustainable way.</p>
+          <p className="mt-2">© Digrwear 2025. All rights reserved.</p>
         </div>
       </div>
     </footer>

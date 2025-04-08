@@ -48,7 +48,7 @@ const products = [
 
 const NewArrivals = () => {
   return (
-    <section className="py-12 md:py-16 bg-hmgray">
+    <section className="py-12 md:py-16 bg-secondary">
       <div className="container px-4 mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">New Arrivals</h2>
         
@@ -62,7 +62,7 @@ const NewArrivals = () => {
                   className="w-full aspect-[3/4] object-cover"
                 />
                 {product.isNew && (
-                  <div className="absolute top-2 right-2 bg-hmred text-white text-xs py-1 px-2">
+                  <div className="absolute top-2 right-2 bg-primary text-white text-xs py-1 px-2">
                     NEW
                   </div>
                 )}

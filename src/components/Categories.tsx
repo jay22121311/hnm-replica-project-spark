@@ -32,13 +32,13 @@ const Categories = () => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {categories.map((category) => (
-            <div key={category.id} className="category-item group">
+            <div key={category.id} className="relative overflow-hidden cursor-pointer group">
               <img 
                 src={category.image} 
                 alt={category.name} 
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="category-item-text">
+              <div className="absolute bottom-0 left-0 right-0 bg-white/70 py-3 text-center font-medium transition-all duration-300 group-hover:bg-white">
                 <h3 className="text-lg font-medium">{category.name}</h3>
               </div>
             </div>
