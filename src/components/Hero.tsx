@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -24,6 +25,11 @@ const Hero = () => {
             <Button variant="hmblack">
               Shop Men
             </Button>
+            <Link to="/login">
+              <Button variant="hmred">
+                Sign In
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
