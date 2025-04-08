@@ -53,9 +53,6 @@
   .category-item {
     @apply relative overflow-hidden cursor-pointer;
   }
-  .category-item {
-    @apply group;
-  }
   .category-item img {
     @apply transition-transform duration-500 group-hover:scale-105;
   }
