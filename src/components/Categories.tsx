@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Button } from "@/components/ui/button";
 
 const categories = [
   {
@@ -32,7 +33,7 @@ const Categories = () => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {categories.map((category) => (
-            <div key={category.id} className="category-item group">
+            <div key={category.id} className="category-item group relative">
               <img 
                 src={category.image} 
                 alt={category.name} 
@@ -40,6 +41,12 @@ const Categories = () => {
               />
               <div className="category-item-text">
                 <h3 className="text-lg font-medium">{category.name}</h3>
+                <Button 
+                  variant="ghost" 
+                  className="mt-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  Shop Now
+                </Button>
               </div>
             </div>
           ))}

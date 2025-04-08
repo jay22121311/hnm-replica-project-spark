@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Button } from "@/components/ui/button";
 import { Facebook, Twitter, Instagram, Youtube, ArrowRight } from 'lucide-react';
 
 const Footer = () => {
@@ -18,9 +19,9 @@ const Footer = () => {
               placeholder="Enter your email" 
               className="flex-1 border border-gray-300 p-3 focus:outline-none"
             />
-            <button className="bg-black text-white px-4 flex items-center">
+            <Button className="bg-black text-white px-4 flex items-center rounded-none">
               <ArrowRight size={20} />
-            </button>
+            </Button>
           </div>
         </div>
         
@@ -62,18 +63,18 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">CONNECT WITH US</h4>
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="hover:text-hmred">
+              <Button variant="ghost" size="icon" className="hover:text-hmred p-0">
                 <Facebook size={20} />
-              </a>
-              <a href="#" className="hover:text-hmred">
+              </Button>
+              <Button variant="ghost" size="icon" className="hover:text-hmred p-0">
                 <Twitter size={20} />
-              </a>
-              <a href="#" className="hover:text-hmred">
+              </Button>
+              <Button variant="ghost" size="icon" className="hover:text-hmred p-0">
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="hover:text-hmred">
+              </Button>
+              <Button variant="ghost" size="icon" className="hover:text-hmred p-0">
                 <Youtube size={20} />
-              </a>
+              </Button>
             </div>
           </div>
         </div>

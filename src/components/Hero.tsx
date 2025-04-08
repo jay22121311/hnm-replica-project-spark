@@ -18,10 +18,10 @@ const Hero = () => {
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Summer Essentials</h1>
           <p className="text-lg md:text-xl mb-6">Discover the latest trends for your summer wardrobe.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-black hover:bg-hmdark text-white px-8 py-6">
+            <Button variant="hmblack">
               Shop Women
             </Button>
-            <Button className="bg-black hover:bg-hmdark text-white px-8 py-6">
+            <Button variant="hmblack">
               Shop Men
             </Button>
           </div>

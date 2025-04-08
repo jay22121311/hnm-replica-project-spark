@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Button } from "@/components/ui/button";
 
 const magazineItems = [
   {
@@ -34,9 +35,13 @@ const Magazine = () => {
                 <div className="bg-white/80 p-6 md:p-8 max-w-xs text-center">
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                   <p className="mb-4">{item.description}</p>
-                  <a href="#" className="inline-block underline font-medium hover:text-hmred">
-                    Read More
-                  </a>
+                  <Button 
+                    variant="link" 
+                    className="text-black underline font-medium hover:text-hmred"
+                    asChild
+                  >
+                    <a href="#">Read More</a>
+                  </Button>
                 </div>
               </div>
             </div>
