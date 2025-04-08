@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -19,17 +18,12 @@ const Hero = () => {
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Summer Essentials</h1>
           <p className="text-lg md:text-xl mb-6">Discover the latest trends for your summer wardrobe.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hmblack">
+            <Button className="bg-black hover:bg-hmdark text-white px-8 py-6">
               Shop Women
             </Button>
-            <Button variant="hmblack">
+            <Button className="bg-black hover:bg-hmdark text-white px-8 py-6">
               Shop Men
             </Button>
-            <Link to="/login">
-              <Button variant="hmred">
-                Sign In
-              </Button>
-            </Link>
           </div>
         </div>
       </div>

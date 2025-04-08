@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Search, User, Heart, ShoppingBag, Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
@@ -30,9 +29,9 @@ const Header = () => {
 
           {/* Logo */}
           <div className="flex-1 md:flex-initial text-center md:text-left">
-            <Link to="/" className="text-2xl font-bold tracking-widest">
+            <a href="/" className="text-2xl font-bold tracking-widest">
               H&amp;M
-            </Link>
+            </a>
           </div>
 
           {/* Desktop Nav */}
@@ -52,11 +51,9 @@ const Header = () => {
             <Button variant="ghost" size="icon" className="hidden md:flex">
               <Search size={20} />
             </Button>
-            <Link to="/login">
-              <Button variant="ghost" size="icon" className="hidden md:flex">
-                <User size={20} />
-              </Button>
-            </Link>
+            <Button variant="ghost" size="icon" className="hidden md:flex">
+              <User size={20} />
+            </Button>
             <Button variant="ghost" size="icon">
               <Heart size={20} />
             </Button>
@@ -115,10 +112,10 @@ const Header = () => {
           </nav>
           
           <div className="mt-8 pt-6 border-t">
-            <Link to="/login" className="flex items-center gap-2 py-3" onClick={toggleMenu}>
+            <div className="flex items-center gap-2 py-3">
               <User size={20} />
               <span className="font-medium">My Account</span>
-            </Link>
+            </div>
           </div>
         </div>
       )}

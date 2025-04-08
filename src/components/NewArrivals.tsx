@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Button } from "@/components/ui/button";
 
 const products = [
   {
@@ -68,9 +67,9 @@ const NewArrivals = () => {
                   </div>
                 )}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/30 to-transparent h-16 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4">
-                  <Button variant="outline" className="bg-white hover:bg-gray-100 text-black border-none py-1 px-4 text-sm">
+                  <button className="bg-white text-black py-1 px-4 text-sm font-medium">
                     Add to Bag
-                  </Button>
+                  </button>
                 </div>
               </div>
               <div className="p-3">
@@ -82,9 +81,9 @@ const NewArrivals = () => {
         </div>
         
         <div className="text-center mt-8">
-          <Button variant="outline" className="border border-black px-8 py-6 font-medium hover:bg-black hover:text-white transition-colors">
+          <a href="#" className="inline-block border border-black px-8 py-3 font-medium hover:bg-black hover:text-white transition-colors">
             View All
-          </Button>
+          </a>
         </div>
       </div>
     </section>
