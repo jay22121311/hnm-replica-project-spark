@@ -11,7 +11,7 @@ const magazineItems = [
   {
     id: 2,
     title: 'Sustainable Fashion',
-    description: 'How we're working towards a more sustainable future.',
+    description: 'How we\'re working towards a more sustainable future.',
     image: 'https://images.pexels.com/photos/5693889/pexels-photo-5693889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750'
   }
 ];
