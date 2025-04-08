@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Button } from "@/components/ui/button";
 
 const magazineItems = [
   {
@@ -11,7 +12,7 @@ const magazineItems = [
   {
     id: 2,
     title: 'Sustainable Fashion',
-    description: 'How we're working towards a more sustainable future.',
+    description: "How we're working towards a more sustainable future.",
     image: 'https://images.pexels.com/photos/5693889/pexels-photo-5693889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750'
   }
 ];
@@ -34,9 +35,9 @@ const Magazine = () => {
                 <div className="bg-white/80 p-6 md:p-8 max-w-xs text-center">
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                   <p className="mb-4">{item.description}</p>
-                  <a href="#" className="inline-block underline font-medium hover:text-hmred">
+                  <Button variant="link" className="font-medium hover:text-primary">
                     Read More
-                  </a>
+                  </Button>
                 </div>
               </div>
             </div>
