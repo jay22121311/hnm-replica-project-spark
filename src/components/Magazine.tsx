@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/button";
 const magazineItems = [
   {
     id: 1,
-    title: 'Summer Style Guide',
-    description: 'Discover the hottest trends for the season.',
-    image: 'https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750'
+    title: 'Vennorah x Digrwear Collection',
+    description: 'Discover our exclusive collaboration with Vennorah.',
+    image: '/public/lovable-uploads/be6e0cdf-6fba-41e9-8d2c-d8e4bc8e94bc.png'
   },
   {
     id: 2,
-    title: 'Sustainable Fashion',
-    description: "How we're working towards a more sustainable future.",
-    image: 'https://images.pexels.com/photos/5693889/pexels-photo-5693889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750'
+    title: 'Sustainable Fashion by Vennorah',
+    description: "How we're working together towards a more sustainable future.",
+    image: '/public/lovable-uploads/3b45a35f-b671-47d2-9019-76a6f1eb6227.png'
   }
 ];
 
@@ -26,11 +26,13 @@ const Magazine = () => {
         <div className="grid md:grid-cols-2 gap-6">
           {magazineItems.map((item) => (
             <div key={item.id} className="relative overflow-hidden group">
-              <img 
-                src={item.image} 
-                alt={item.title} 
-                className="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105"
-              />
+              <div className="w-full aspect-[16/9] bg-gray-100 flex items-center justify-center">
+                <img 
+                  src={item.image} 
+                  alt={item.title} 
+                  className="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-white/80 p-6 md:p-8 max-w-xs text-center">
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>
