@@ -30,17 +30,14 @@ const Magazine = () => {
                 <img 
                   src={item.image} 
                   alt={item.title} 
-                  className="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-contain"
                 />
               </div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-white/80 p-6 md:p-8 max-w-xs text-center">
-                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                  <p className="mb-4">{item.description}</p>
-                  <Button variant="link" className="font-medium hover:text-primary">
-                    Read More
-                  </Button>
-                </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-white/70 p-4">
+                <h3 className="text-xl font-bold">{item.title}</h3>
+                <Button variant="link" className="font-medium hover:text-primary p-0">
+                  Read More
+                </Button>
               </div>
             </div>
           ))}
